@@ -8,7 +8,7 @@ import {
   typescript,
   c,
   css,
-  webRtc,
+  webrtc,
   reactjs,
   redux,
   tailwind,
@@ -112,7 +112,7 @@ const technologies = [
   },
   {
     name: "webRtc",
-    icon: webRtc,
+    icon: webrtc,
   },
   {
     name: "docker",
