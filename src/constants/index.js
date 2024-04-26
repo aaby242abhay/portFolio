@@ -1,3 +1,4 @@
+import { w } from "maath/dist/misc-7d870b3c.esm";
 import {
   mobile,
   backend,
@@ -5,25 +6,30 @@ import {
   web,
   javascript,
   typescript,
-  html,
+  c,
   css,
+  webRtc,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  python,
+  videoCall,
+  payment,
+  ambulance,
+  leetcode,
+  codeforces,
+  gitLogo,
+  nextjs
+
 } from "../assets";
+import { code } from "three/examples/jsm/nodes/Nodes.js";
 
 export const navLinks = [
   {
@@ -42,31 +48,31 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Backend Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "MERN Stack",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Machine Learning",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Competitive Programming",
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "C++",
+    icon: c,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "python",
+    icon: python,
   },
   {
     name: "JavaScript",
@@ -75,6 +81,10 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
+  },
+  {
+    name: "next.js",
+    icon: nextjs,
   },
   {
     name: "React JS",
@@ -97,113 +107,97 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "webRtc",
+    icon: webRtc,
   },
   {
     name: "docker",
     icon: docker,
-  },
+  },  
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Chatty 2.0",
+    company_name: "videoRooms",
+    icon: videoCall,
+    iconBg: "#707070",
+    date: "August 2023 - December 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "The core concept of the project is to create a virtual platform that serves as a hub for users to engage in both formal and social collaboration.",
+      "Users can create video chat room of maximum 4 users.",
+      "Allows users to authenticate themselves and send friend requests to other users while getting real time updates.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Zaytm 2.0",
+    company_name: "paymentApp",
+    icon: payment,
+    iconBg: "#707070",
+    date: "November 2023 - March 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "The core concept of the project is to build a banking wallet and understand how banking API’s work for a wallet like application.",
+      "Web-based platform facilitating payments to manage peer-to-peer transactions, simplifying sharing expenses online.",
+      "Managed database schemas and interactions with PostgreSQL and Prisma, ensuring data integrity and efficient query performance.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "RoadGuard",
+    company_name: "Road Accident Prediction and Classification",
+    icon: ambulance,
+    iconBg: "#707070",
+    date: "ongoing",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Input taken from user is sent to the backend flask server which feeds the parameters to the ML model and returns the result.",
+      "The purpose of such a model is to be able to predict which conditions will be more prone to accidents, and therefore take preventive measures.",
+      "Takes input from the user and predicts the probability of an accident happening in that area.",
     ],
   },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Solved over 150 questions on Leetcode evidenced by achieving the title of Knight and demonstrating my algorithmic problem-solving and coding skills.",
+    name: "aaby_abhay",
+    designation: "Knight",
+    company: "LeetCode",
+    image: leetcode,
+    link : "https://leetcode.com/"
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Reaching the rank of Specialist within just 150 questions on CodeForces, I have demonstrated my ability to solve complex problems efficiently.",
+    name: "mcAdams",
+    designation: "Specialist",
+    company: "codeForces",
+    image: codeforces,
+    link : "https://codeforces.com/"
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "My git-hub account contains the link of the projects I have done so far. I have worked on various projects and have a good understanding of the technologies.",
+    name: "aaby242abhay",
+    designation: "Well-versed",
+    company: "github",
+    image: gitLogo,
+    link : "https://github.com/aaby242abhay"
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ChattY 2.0 ",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Video chat web application to send real time messages and video calling between connected users.",
     tags: [
       {
-        name: "react",
+        name: "webRTC",
         color: "blue-text-gradient",
       },
       {
@@ -211,54 +205,54 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "scoket.IO",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/aaby242abhay/Chatty-2.0",
   },
   {
-    name: "Job IT",
+    name: "Zaytm 2.0",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Zaytm is a web-based wallet application that lets users and merchants onramp money via a fake bank account.",
     tags: [
       {
-        name: "react",
+        name: "next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "postgreSQL",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "express",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/aaby242abhay/zayTm-2.0",
   },
   {
-    name: "Trip Guide",
+    name: "RoadGaurd",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A machine learning powered web app which predicts accidents severity based on user’s location and weather conditions.",
     tags: [
       {
-        name: "nextjs",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "azure",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "flask",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/aaby242abhay/Road_Accident_Prediction",
   },
 ];
 

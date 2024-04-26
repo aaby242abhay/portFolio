@@ -6,10 +6,22 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import c from "./c.png";
+import webRtc from "./webRtc.svg";
+import python from "./python.png";
+import socket from "./socket.svg";
+import videoCall from "./videoCall.png";
+import payment from "./payment.png";
+import ambulance from "./ambulance.png";
+import leetcode from "./leetcode.png";
+import codeforces from "./codeforces.svg";
+import gitLogo from "./gitLogo.png";
+import nextjs from "./nextjs.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
+
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -59,4 +71,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  c,
+  webRtc,
+  python,
+  socket,
+  videoCall,
+  payment,
+  ambulance,
+  leetcode,
+  codeforces,
+  gitLogo,
+  nextjs
 };

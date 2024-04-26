@@ -13,6 +13,7 @@ const FeedbackCard = ({
   designation,
   company,
   image,
+  link
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -26,18 +27,22 @@ const FeedbackCard = ({
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
           <p className='text-white font-medium text-[16px]'>
-            <span className='blue-text-gradient'>@</span> {name}
+            <span className='blue-text-gradient'>@</span>
+            <a href= {link} className="blue-text-gradient">{name}</a>
           </p>
           <p className='mt-1 text-secondary text-[12px]'>
-            {designation} of {company}
+            {designation} in {company}
           </p>
         </div>
 
+        <a href={link}>
         <img
           src={image}
           alt={`feedback_by-${name}`}
           className='w-10 h-10 rounded-full object-cover'
         />
+        </a>
+       
       </div>
     </div>
   </motion.div>
@@ -50,8 +55,8 @@ const Feedbacks = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <p className={styles.sectionSubText}>Problem solving ability</p>
+          <h2 className={styles.sectionHeadText}>Coding Profiles</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
