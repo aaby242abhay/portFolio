@@ -7,7 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import c from "./c.png";
-import webRtc from "./webRtc.svg";
+import webrtc from "./webrtc.svg";
 import python from "./python.png";
 import socket from "./socket.svg";
 import videoCall from "./videoCall.png";
@@ -72,7 +72,7 @@ export {
   jobit,
   tripguide,
   c,
-  webRtc,
+  webrtc,
   python,
   socket,
   videoCall,
